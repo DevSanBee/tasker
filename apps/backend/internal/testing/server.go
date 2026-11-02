@@ -3,10 +3,10 @@ package testing
 import (
 	"time"
 
+	"github.com/DevSanBee/go-tasker/internal/config"
+	"github.com/DevSanBee/go-tasker/internal/database"
+	"github.com/DevSanBee/go-tasker/internal/server"
 	"github.com/rs/zerolog"
-	"github.com/sriniously/go-tasker/internal/config"
-	"github.com/sriniously/go-tasker/internal/database"
-	"github.com/sriniously/go-tasker/internal/server"
 )
 
 // CreateTestServer creates a server instance for testing
@@ -23,7 +23,7 @@ func CreateTestServer(logger *zerolog.Logger, db *TestDB) *server.Server {
 			},
 			NewRelic: config.NewRelicConfig{
 				LicenseKey:                "",    // Empty for tests
-				AppLogForwardingEnabled:   false, // Disabled for tests  
+				AppLogForwardingEnabled:   false, // Disabled for tests
 				DistributedTracingEnabled: false, // Disabled for tests
 				DebugLogging:              false, // Disabled for tests
 			},

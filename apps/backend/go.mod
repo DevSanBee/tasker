@@ -1,4 +1,4 @@
-module github.com/sriniously/go-tasker
+module github.com/DevSanBee/go-tasker
 
 go 1.24.5
 

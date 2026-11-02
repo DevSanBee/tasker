@@ -7,13 +7,13 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/DevSanBee/go-tasker/internal/config"
+	"github.com/DevSanBee/go-tasker/internal/database"
+	"github.com/DevSanBee/go-tasker/internal/lib/job"
+	loggerPkg "github.com/DevSanBee/go-tasker/internal/logger"
 	"github.com/newrelic/go-agent/v3/integrations/nrredis-v9"
 	"github.com/redis/go-redis/v9"
 	"github.com/rs/zerolog"
-	"github.com/sriniously/go-tasker/internal/config"
-	"github.com/sriniously/go-tasker/internal/database"
-	"github.com/sriniously/go-tasker/internal/lib/job"
-	loggerPkg "github.com/sriniously/go-tasker/internal/logger"
 )
 
 type Server struct {

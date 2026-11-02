@@ -1,8 +1,8 @@
 package middleware
 
 import (
+	"github.com/DevSanBee/go-tasker/internal/server"
 	"github.com/newrelic/go-agent/v3/newrelic"
-	"github.com/sriniously/go-tasker/internal/server"
 )
 
 type Middlewares struct {

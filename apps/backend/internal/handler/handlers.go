@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"github.com/sriniously/go-tasker/internal/server"
-	"github.com/sriniously/go-tasker/internal/service"
+	"github.com/DevSanBee/go-tasker/internal/server"
+	"github.com/DevSanBee/go-tasker/internal/service"
 )
 
 type Handlers struct {

@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 	"fmt"
 
+	"github.com/DevSanBee/go-tasker/internal/config"
+	"github.com/DevSanBee/go-tasker/internal/lib/email"
 	"github.com/hibiken/asynq"
 	"github.com/rs/zerolog"
-	"github.com/sriniously/go-tasker/internal/config"
-	"github.com/sriniously/go-tasker/internal/lib/email"
 )
 
 var emailClient *email.Client
